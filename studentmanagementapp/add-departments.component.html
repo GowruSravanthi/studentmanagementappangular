@@ -1,0 +1,15 @@
+<!-- add-departments.component.html -->
+<div>
+  <h3>Add Departments</h3>
+
+  <div class="form-group">
+    <label for="departmentName">Department Name</label>
+    <input type="text" id="departmentName" [(ngModel)]="newDepartment" required />
+  </div>
+
+  <button type="button" (click)="addDepartment()">Add Department</button>
+  <h3>Department List</h3>
+  <ul>
+    <li *ngFor="let department of departments">{{ department }}</li>
+  </ul>
+</div>
